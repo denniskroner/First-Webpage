@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+    display: table;
+    width: 100%;
+}
+
+#main_first_row p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+
+#main_first_row p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0px 0px 30px 0px;
+}
+
+#main_row {
+    display: table;
+    width: 100%;
+}
+.pic {
+    display: table;
+  
+}
+.table_col {
+    display: table;
+    float: right;
+}
+
+img {
+    width: 400px;
+    margin-bottom: 40px;
+
+    display: table;
+}
+
+table {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0)
+}
+
+
+.table_col div{
+    margin: 20px auto;
+    display: table; 
+}
+
+.table_col div:first-child,
+.table_col div:last-child{
+    margin: 0px auto;
+}
+
+#main_row table td:first-child,
+#main_row table th:first-child{
+    width: 360px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#main_row table td:nth-child(2),
+#main_row table th:nth-child(2){
+    width: 180px;
+    text-align: right;
+    padding-right: 20px;
+    border-left: 1px dashed rgb(0, 0, 0);
+}
+
+#main_row table td:nth-child(2){
+    font-size: 18px;
+}
+
+#professional_table tr:nth-child(even) td:first-child,
+#university_table tr:nth-child(even) td:first-child,
+#education_table td:first-child,
+#pers_details_table td:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#professional_table tr:nth-child(odd) td:first-child,
+#university_table tr:nth-child(odd) td:first-child{
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.table_col table th{
+    font-size: 20px;
+}
+
+
+#professional_table tr:hover th,
+#professional_table tr:nth-child(even):hover td,
+#professional_table tr:nth-child(even):hover + tr td,
+#university_table tr:hover th,
+#university_table tr:nth-child(even):hover td,
+#university_table tr:nth-child(even):hover + tr td{
+    background-color: rgb(150, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#education_table tr:hover th,
+#pers_details_table tr:hover th,
+#education_table tr:hover td,
+#pers_details_table tr:hover td{
+    background-color: rgb(150, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media only screen and (min-width: 970px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+#main_row img:hover {
+    border: 3px solid rgb(150,0, 0)
+}
+
+
+header li:nth-child(2) a:first-child {
+    background-color: rgb(150,0,0);
+    color: white;
+    font-weight: bold;
+}
